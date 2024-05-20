@@ -29,4 +29,4 @@ jobs:
         AWS_REGION: 'eu-north-1'
       run: |
         aws configure set region ${{ env.AWS_REGION }}
-        aws lambda update-function-code --function-name hello_world --zip-file fileb://function.zip
+        aws lambda update-function-code --function-name lambda_function --zip-file fileb://function.zip
